@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game">
+            <!-- Tekst die verdwijnt na start -->
+            <p id="introText">Answer the 10 questions as fast as you can.</p>
+            <button id="startBtn">Click here to start!</button>
+            
+            <p id="timer" style="display: none;">Timer: 0.00 seconds</p>
+        
+            <div id="numberList" style="display: none;">
+                <span class="number" id="num1">1</span>
+                <span class="number" id="num2">2</span>
+                <span class="number" id="num3">3</span>
+                <span class="number" id="num4">4</span>
+                <span class="number" id="num5">5</span>
+                <span class="number" id="num6">6</span>
+                <span class="number" id="num7">7</span>
+                <span class="number" id="num8">8</span>
+                <span class="number" id="num9">9</span>
+                <span class="number" id="num10">10</span>
+            </div>
+
+            <p id="equation" style="display: none;"></p>
+            <div id="answer-container">
+                <input type="text" id="answer" placeholder="Answer:" autocomplete="off" style="display: none;">
+                <button id="startOverBtn" style="display: none;">Start over</button>
+            </div>
+            
+        </div>
+        <p id="result"></p>
+        <button id="retryBtn" style="display:none;">Retry</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
